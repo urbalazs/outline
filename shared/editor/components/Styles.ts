@@ -1937,6 +1937,15 @@ del[data-operation-index] {
 }
 `;
 
+const toggleBlockStyle = () => css`
+  .toggle-head {
+    display: flex;
+  }
+  .toggle-body {
+    padding-left: 12px;
+  }
+`;
+
 const EditorContainer = styled.div<Props>`
   ${style}
   ${mathStyle}
@@ -1944,6 +1953,7 @@ const EditorContainer = styled.div<Props>`
   ${codeBlockStyle}
   ${findAndReplaceStyle}
   ${emailStyle}
+  ${toggleBlockStyle}
 `;
 
 export default EditorContainer;
