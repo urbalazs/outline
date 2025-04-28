@@ -2020,9 +2020,15 @@ del[data-operation-index] {
   }
 
   > .toggle-block-content {
+    > :is(:not(.toggle-block-head)) {
+      margin-top: 0.5em;
+    }
+    > :is(:first-child) {
+      margin-top: 0;
+    }
     > .toggle-block-head {
       > * {
-        margin-top: 0
+        margin-top: 0;
       }
     }
     flex-grow: 1;
