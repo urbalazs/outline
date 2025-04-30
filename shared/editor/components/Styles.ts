@@ -2012,7 +2012,7 @@ del[data-operation-index] {
     &:hover {
       opacity: 1;
     }
-    overflow: auto;
+    overflow: unset;
 
     > svg {
       transition: transform 200ms ease-out;
